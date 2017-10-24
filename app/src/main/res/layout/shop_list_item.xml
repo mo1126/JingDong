@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout3">
+
+        <CheckBox
+            android:id="@+id/check_list"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+             android:layout_marginLeft="10dp"
+            android:button="@drawable/checkbox_style" />
+
+        <ImageView
+            android:id="@+id/shop_iv"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/check_list"
+            android:layout_toRightOf="@+id/check_list"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/shop_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/shop_iv"
+            android:layout_toRightOf="@+id/shop_iv"
+            android:maxLines="2"
+            android:text="ashufihfueiw" />
+
+        <TextView
+            android:id="@+id/shop_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/shop_iv"
+            android:layout_toEndOf="@+id/shop_iv"
+            android:layout_toRightOf="@+id/shop_iv"
+            android:text="454545"
+            android:textColor="#f00" />
+        <com.mo.jingdong.utils.AmountView
+            android:id="@+id/jiajian"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            app:btnWidth="30dp"
+            app:tvWidth="40dp"
+            android:layout_alignBottom="@+id/shop_price"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"></com.mo.jingdong.utils.AmountView>
+    </RelativeLayout>
+</LinearLayout>

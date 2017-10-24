@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mo.jingdong.ZhanghuActivity">
+<Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:id="@+id/toolbar1"
+    tools:targetApi="lollipop"
+    >
+    <TextView
+        android:id="@+id/toolbar_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="账户设置"
+        android:gravity="center"/>
+</Toolbar>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/hui"
+        android:layout_below="@+id/toolbar1"/>
+<RelativeLayout
+    android:id="@+id/user_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/tuichu"
+    android:layout_below="@+id/toolbar1">
+
+    <com.meg7.widget.CircleImageView
+        app:shape="circle"
+        android:id="@+id/img_zhanghu"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/a_o"
+        android:layout_marginRight="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginTop="21dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/tv_nickname"
+        android:layout_toStartOf="@+id/tv_nickname" />
+    <TextView
+        android:id="@+id/tv_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="昵称"
+        android:textSize="15dp"
+        android:layout_alignTop="@+id/img_zhanghu"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用户名"
+        android:textSize="15dp"
+        android:layout_below="@+id/tv_nickname"
+        android:layout_toRightOf="@+id/img_zhanghu"
+        android:layout_toEndOf="@+id/img_zhanghu" />
+</RelativeLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="退出登录"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#fff"
+        android:id="@+id/tuichu" />
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#11999999">
+        <CheckBox
+            android:padding="5dp"
+            android:id="@+id/dianpu_isselect"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:button="@drawable/checkbox_style"
+            android:paddingLeft="20dp"
+            android:gravity="center"
+            />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/dianpu_isselect"
+            android:layout_toEndOf="@+id/dianpu_isselect"
+            android:src="@drawable/dianpu"
+            android:padding="6dp"
+            android:id="@+id/imageView3" />
+        <TextView
+            android:id="@+id/dianpu_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="专营店"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imageView3"
+            android:layout_toEndOf="@+id/imageView3" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rc_gouwuche_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/head_search_rr"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+
+            >
+            <LinearLayout
+                android:id="@+id/ll_saoyisao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                >
+                <ImageView
+                    android:layout_width="25dip"
+                    android:layout_height="25dip"
+                    android:src="@drawable/saiyisaohei"
+                    />
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="30dip"
+                android:orientation="horizontal"
+                android:background="@drawable/ss"
+                >
+                <ImageView
+                    android:layout_width="15dip"
+                    android:layout_height="15dip"
+                    android:src="@drawable/sousuo"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"/>
+                <TextView
+                    android:text="都市丽人 领卷满399减200"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dip"
+                    android:layout_centerVertical="true"
+                    android:layout_centerInParent="true"
+                    />
+                <ImageView
+                    android:layout_width="15dip"
+                    android:layout_height="15dip"
+                    android:src="@drawable/xiaozhi"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <ImageView
+                    android:layout_width="25dip"
+                    android:layout_height="25dip"
+                    android:src="@drawable/xinxihei"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+</LinearLayout>
